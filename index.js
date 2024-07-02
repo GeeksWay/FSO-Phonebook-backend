@@ -7,7 +7,6 @@ const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json()); // Middleware to parse JSON bodies
-app.use(express.static('dist'));
 app.use(morgan('tiny')); // Logging middleware with 'tiny' configuration
 
 let persons = [
